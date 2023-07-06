@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TecGurusWeb", "TecGurusWeb\TecGurusWeb.csproj", "{DDD02C2B-3D1F-445B-9406-16092DA72563}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleInjection", "ConsoleInjection\ConsoleInjection.csproj", "{6124BEF7-2093-4C06-82BB-9266A0EB6CE4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TecGurusModels", "TecGurusModels\TecGurusModels.csproj", "{3EC04C5B-CE3C-4B08-B333-F4BEAC098EFB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TecGurusFactory", "TecGurusFactory\TecGurusFactory.csproj", "{7E53FCC6-0BF7-46EA-BB85-6D4F79B94C8D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TecGurusInfraestructure", "TecGurusInfraestructure\TecGurusInfraestructure.csproj", "{977B9634-A77F-4CE2-A40A-3B3E138376D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TecGurusCommon", "TecGurusCommon\TecGurusCommon.csproj", "{1F787956-CC00-417F-B60C-D29358341073}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDD02C2B-3D1F-445B-9406-16092DA72563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD02C2B-3D1F-445B-9406-16092DA72563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD02C2B-3D1F-445B-9406-16092DA72563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD02C2B-3D1F-445B-9406-16092DA72563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6124BEF7-2093-4C06-82BB-9266A0EB6CE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6124BEF7-2093-4C06-82BB-9266A0EB6CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6124BEF7-2093-4C06-82BB-9266A0EB6CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6124BEF7-2093-4C06-82BB-9266A0EB6CE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EC04C5B-CE3C-4B08-B333-F4BEAC098EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EC04C5B-CE3C-4B08-B333-F4BEAC098EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EC04C5B-CE3C-4B08-B333-F4BEAC098EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EC04C5B-CE3C-4B08-B333-F4BEAC098EFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E53FCC6-0BF7-46EA-BB85-6D4F79B94C8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E53FCC6-0BF7-46EA-BB85-6D4F79B94C8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E53FCC6-0BF7-46EA-BB85-6D4F79B94C8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E53FCC6-0BF7-46EA-BB85-6D4F79B94C8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{977B9634-A77F-4CE2-A40A-3B3E138376D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{977B9634-A77F-4CE2-A40A-3B3E138376D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{977B9634-A77F-4CE2-A40A-3B3E138376D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{977B9634-A77F-4CE2-A40A-3B3E138376D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F787956-CC00-417F-B60C-D29358341073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F787956-CC00-417F-B60C-D29358341073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F787956-CC00-417F-B60C-D29358341073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F787956-CC00-417F-B60C-D29358341073}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ECB7FCFA-DBF4-4428-B7AE-73D09E076FF3}
+	EndGlobalSection
+EndGlobal

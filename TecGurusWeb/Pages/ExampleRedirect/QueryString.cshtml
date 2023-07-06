@@ -1,0 +1,16 @@
+﻿@*Indica que nuestro archivo cshtml es un razor page y
+    no una vista de mvc*@
+@page "{Id:int?}"
+
+@*Indica el modelo perteneciente al ViewModel con el cual trabaja esta Vista*@
+@model TecGurusWeb.Pages.ExampleRedirect.QueryStringModel
+
+@*sirve para crear variables de c# con razor para que se puedan utilizar
+
+en esta vista*@
+@{
+    var valor = 100;
+}
+
+
+<h3>@Model.Message</h3>

@@ -1,0 +1,108 @@
+﻿@page
+@model TecGurusWeb.Pages.Course.ExampleRazorPageModelModel
+@{
+}
+
+
+<h1>@Model.Mensaje</h1>
+<hr />
+<br />
+
+<h3>Los Datos de la Persona son :</h3>
+
+<h5>@Model.Persona.Id</h5>
+<h5>@Model.Persona.Name</h5>
+<h5>@Model.Persona.Phone</h5>
+<h5>@Model.Persona.Email</h5>
+<br />
+<hr />
+<h1>**************************************************</h1>
+<h3>Formulario Post</h3>
+@*Crear un formulario, el cual es un espacio de trabajo donde lleno o seteo datos en una vista "controles de html"
+"tag helpers", cuando quiero hacer uso de los datos seteados solo los elementos detro del forrmulario seran accesibles en el ViewModel
+el formulario envia los datos al Codebehid "ViewModel" mediante una peticion al servidor "submit"
+button:
+button-> no realizada nada esta a la espera de asociarle un evento Onclic con alguna funcion de Js
+submit -> realiza la peticion directa al servidor en la ruta(metodo) que le indique
+reset -> limpia campos
+*@
+
+<div class="col-md-12">
+    <form method="post">
+        <h4>Envió de un Parametro</h4>
+        <br />
+        <input type="text" name="parametroString"
+               class="form-control" placeholder="Ingresa parametro a enviar" />
+        <br />
+
+        <button type="submit" class="btn btn-dark">Enviar</button>
+
+    </form>
+</div>
+<br />
+<hr />
+
+<div class="col-md-12">
+    <form method="post">
+        <h4>Formulario Nueva Persona</h4>
+        <br />
+        <input asp-for="@Model.Persona.Id" type="text"
+               class="form-control" placeholder="Ingresa Id" />
+        <br />
+        <input asp-for="@Model.Persona.Name" type="text"
+               class="form-control" placeholder="Ingresa nombre" />
+        <br />
+        <input asp-for="@Model.Persona.Phone" type="text"
+               class="form-control" placeholder="Ingresa telefono" />
+        <br />
+        <input asp-for="@Model.Persona.Email" type="text"
+               class="form-control" placeholder="Ingresa email" />
+        <br />
+        @* asp-page-handler permite especificar por nombre a que metodo POST quiero ir
+        tener multiples formularios con solicitud POST
+        *@
+        <button type="submit" class="btn btn-dark" asp-page-handler="Persona">Enviar</button>
+
+    </form>
+</div>
+
+
+
+@* //En un solo formulario debajo del de persona colocar crear un nuevo form para que se digiten datos para
+        //Pais : Id, Nombre, ademas de datos para Person Nombre y el email
+        y obtenerlos en un metodo onPost  llamado PaisPersona (colocar breakpoint para mostrar el ejercicio)        
+        *@
+
+<br />
+<hr />
+
+<div class="col-md-12">
+    <form method="post">
+        <h4>Ingresa un Parametro</h4>
+        <br />
+        <input asp-for="@Model.MyId" type="text"
+               class="form-control" placeholder="Ingresa Id" />
+        <br />
+
+        <button type="submit" class="btn btn-dark"
+        asp-page-handler="RedirectParameter">Enviar</button>
+
+    </form>
+</div>
+
+
+<br />
+<hr />
+
+<div class="col-md-12">
+    <form method="post">
+        <h4>Envió de TempData</h4>
+        <br />      
+
+        <button type="submit" class="btn btn-dark"
+                asp-page-handler="RedirectTempDataParameter">
+            Enviar
+        </button>
+
+    </form>
+</div>

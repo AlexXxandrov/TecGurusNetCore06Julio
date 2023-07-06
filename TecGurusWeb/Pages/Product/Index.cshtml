@@ -1,0 +1,42 @@
+﻿@page
+@model TecGurusWeb.Pages.Product.IndexModel
+@{
+}
+
+<div class="row">
+    <div class="col-md-10">
+        <h2>Products</h2>
+    </div>
+
+    <div class="col-md-2">
+        <a asp-page="./Create" class="btn btn-info">Nuevo</a>
+    </div>
+</div>
+<hr />
+<br />
+
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model.ListProductModel)
+        {
+            <tr>
+                <td>@product.ProductName</td>
+                <td>@product.UnitPrice</td>
+                <td>@product.CategoryId</td>
+
+                <td> <a asp-page="./Update" asp-route-id="@product.ProductId"> Modificar</a> </td>
+            </tr>
+        }
+
+    </tbody>
+
+
+</table>

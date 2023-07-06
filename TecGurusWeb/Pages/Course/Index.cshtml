@@ -1,0 +1,15 @@
+﻿@page
+@model TecGurusWeb.Pages.Course.IndexModel
+@{
+}
+
+@*cuando vea un simbolo @ significa que estoy codificando en s
+codigo Razor (Razor Code) -> hibrido entre html y c#*@
+@*//Iteracion ciclo para reccorrer un objeto(en este caso el
+objeto es de tipo List<Dias>)*@
+@foreach(var dia in Model.Dias){
+
+    <h5>@dia.Id</h5>
+    <h5>@dia.Nombre</h5>
+    <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+}

@@ -1,0 +1,33 @@
+﻿@page
+@model TecGurusWeb.Pages.Student.IndexModel
+@{
+}
+
+<h2>Students</h2>
+<hr />
+<br />
+
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Group</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model.ListStudentModel)
+        {
+            <tr>
+                <td>@student.Name</td>
+                <td>@student.Age</td>
+                <td>@student.Email</td>
+                <td>@student.NameGroup</td>
+            </tr>
+        }
+
+    </tbody>
+
+
+</table>
